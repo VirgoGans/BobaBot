@@ -20,7 +20,7 @@ global.gopay = '6285742344873'
 
 //Name Bot & Grouplink//
 global.namebot = 'Boba Bot'
-global.gc = 'https://chat.whatsapp.com/JEDQfzMGZan4HA98wtxsNL'
+global.gc = 'https://chat.whatsapp.com/ITiCuritEfx60TOHTMFgkL'
 global.web = 'https://myblogxyz.netlify.app' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 
 //Tanpilan wm Bot //
