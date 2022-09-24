@@ -175,44 +175,16 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let fetch = require('node-fetch') 
-const ftroli = {
-	key : {
-                          participant : '0@s.whatsapp.net'
-                        },
-       message: {
-                    orderMessage: {
-                            itemCount : 9999999999999,
-                            status: 1,
-                            surface : 1,
-                            message: '© TioXd Official',
-                            orderTitle: 'MENU',
-                            thumbnail: await (await fetch('https://telegra.ph/file/3911d7aaaa8733314f70f.png')).buffer(),
-                            sellerJid: '0@s.whatsapp.net'
-          
-                          }
-                        }
-                      }
-await conn.send2ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/77d411d5a3808b375c232.jpg')).buffer(),  '*────────[ DASBOARD ]────────*', text, 'INFOBOT', '.info', 'LISTMENU', '.menu', m, {  
-      quoted: ftroli,  
-      contextInfo: { //forwardingScore: 99999, isForwarded: true,  
-          externalAdReply: {  showAdAttribution: true, 
-              title: 'Bot Wahatsapp Multi Device',  
-              body: '© TioXd', 
-              description: 'Made With ❤️ TioXd', 
-              mediaType: 2,  
-            thumbnail: await (await fetch('https://telegra.ph/file/00faf159ce0349901eaf3.jpg')).buffer(), 
-           mediaUrl: `https://www.facebook.com/tio.permana.50999` 
-          }  
-       }  
-      })
+
+await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/b5064fec4c12e77672585.jpg')).buffer(),  '*────────[ DASBOARD ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu server sedang error', m)
     throw e
   }
 }
-handler.help = ['menu']
+handler.help = ['menu', 'help', 'start']
 handler.tags = ['main']
-handler.command = /^(a)$/i
+handler.command = /^(menu|help|start)$/i
 
 handler.exp = 3
 
