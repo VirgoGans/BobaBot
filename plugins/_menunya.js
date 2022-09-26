@@ -68,7 +68,7 @@ const defaultMenu = {
   body: '• %cmd %islimit %isPremium',
   footer: '\n',
   after: `
-〉────────〔 BOBA BOT 〕────────〈
+〉──────〔 BOBA BOT 〕──────〈
 *Script: Private*
 *Owner: Iyann*
 *Bot Name: BOBA BOT*
@@ -194,7 +194,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                           }
                         }
                       }
-await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/c6801d9fd7d2d27f1b43a.jpg')).buffer(),  '*────────[ DASBOARD ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
+await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/c6801d9fd7d2d27f1b43a.jpg')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu server sedang error', m)
     throw e
