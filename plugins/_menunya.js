@@ -177,7 +177,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let fetch = require('node-fetch') 
-    const ftroli = {
+const ftroli = {
 	key : {
                           participant : '0@s.whatsapp.net'
                         },
