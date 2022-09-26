@@ -41,12 +41,6 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-〆 *BOBA INFO* 〆
- • Username : %name
- • Role : %role
- • Level : %level (%exp / %maxexp) %xp4levelup
- • Total XP : %totalexp XP
-
 〆 *BOBA STATUS* 〆
  • Uptime : %uptime
  • Library : Baileys Multi Device
@@ -73,7 +67,14 @@ const defaultMenu = {
   header: '〆 *%category* 〆',
   body: '• %cmd %islimit %isPremium',
   footer: '\n',
-  after: ``,
+  after: `
+〉────────〔 BOBA BOT 〕────────〈
+*Script: Private*
+*Owner: Iyann*
+*Bot Name: BOBA BOT*
+*Bot Group: https://chat.whatsapp.com/ITiCuritEfx60TOHTMFgkL*
+*Bot Nunber: wa.me/6285742966427*
+`,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
