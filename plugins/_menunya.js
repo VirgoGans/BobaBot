@@ -178,7 +178,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let fetch = require('node-fetch') 
 
-await conn.send3ButtonVid(m.chat, await (await fetch('https://telegra.ph/file/bc6c7fa44751b7252682d.mp4')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
+await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/2aff998a8d9a3a11fdd44.jpg')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu server sedang error', m)
     throw e
