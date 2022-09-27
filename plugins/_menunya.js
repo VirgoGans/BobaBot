@@ -177,24 +177,8 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let fetch = require('node-fetch') 
-const ftroli = {
-	key : {
-                          participant : '0@s.whatsapp.net'
-                        },
-       message: {
-                    orderMessage: {
-                            itemCount : 9999999999999,
-                            status: 1,
-                            surface : 1,
-                            message: '© Boba Bot V1.05',
-                            orderTitle: 'MENU',
-                            thumbnail: await (await fetch('https://telegra.ph/file/b5064fec4c12e77672585.jpg')).buffer(),
-                            sellerJid: '0@s.whatsapp.net'
 
-                          }
-                        }
-                      }
-await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/c6801d9fd7d2d27f1b43a.jpg')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
+await conn.send3ButtonVid(m.chat, await (await fetch('https://telegra.ph/file/bc6c7fa44751b7252682d.mp4')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu server sedang error', m)
     throw e
