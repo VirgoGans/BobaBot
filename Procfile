@@ -1,1 +1,2 @@
-worker: node . --db 'mongodb+srv://KazTzy:iyann123_@cluster0.tx62eho.mongodb.net/?retryWrites=true&w=majority'
+web: node . --server
+db: node . --db "mongodb+srv://db-vbot:Budirejo1@cluster0.ssoum2t.mongodb.net/?retryWrites=true&w=majority" --autocleartmp --restrict
