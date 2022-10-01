@@ -7,29 +7,29 @@
 //Dalam file _menunya.js
 
 //『 Utama 』 //
-global.owner = ['6285742344873']  // isi jika perlu
-global.mods = ['']   // isi jika perlu
-global.prems = ['']  // isi jika perlu
+global.owner = ['6288227856331']  // isi jika perlu
+global.mods = ['6288227856331']   // isi jika perlu
+global.prems = ['6288227856331']  // isi jika perlu
 
 //Isi dengan nama dan nomor lu//
-global.nameowner = 'DarkBoyz' // isi nama kalian bebas
-global.numberowner = '6285742344873' // isi nomor kalian dengan awalan seperti di contoh 
-global.dana = '6285742344873' // isi dengan nomor dana yg kamu punya 
-global.pulsa = '085742966427' // isi dengan nomor pulsa hp kalian
-global.gopay = '6285742344873'
+global.nameowner = 'VirgoGans' // isi nama kalian bebas
+global.numberowner = '6288227856331' // isi nomor kalian dengan awalan seperti di contoh 
+global.dana = '6288227856331' // isi dengan nomor dana yg kamu punya 
+global.pulsa = '6288227856331' // isi dengan nomor pulsa hp kalian
+global.gopay = '6288227856331'
 
 //Name Bot & Grouplink//
-global.namebot = 'Boba Bot'
-global.gc = 'https://chat.whatsapp.com/ITiCuritEfx60TOHTMFgkL'
+global.namebot = 'V-Bot'
+global.gc = 'https://chat.whatsapp.com/ITiCuritEf60TOHTMFgkL'
 global.web = 'https://myblogxyz.netlify.app' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 
 //Tanpilan wm Bot //
 global.lolkey = 'rey2k22' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
-global.wm = '© Boba Bot'
+global.wm = '© V-Bot'
 global.watermark = wm
-global.wm2 = 'Boba Bot'
-global.wm3 = '© Boba Bot'
+global.wm2 = 'VirgoGans'
+global.wm3 = '© V Bot'
 global.wm4 = '© 2021/2022'
 global.htki = '––––––『' 
 global.htka = '』––––––'
@@ -39,8 +39,8 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = '*Stiker sedang dibuat...*'
-global.packname = 'Made with'
-global.author = 'Bot WhatsApp\nBoba Bot'
+global.packname = 'V-Bot'
+global.author = 'virgo gans'
 
 //Apikey Setting//
 global.APIs = { // API Prefix
