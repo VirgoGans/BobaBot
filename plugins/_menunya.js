@@ -177,8 +177,37 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let fetch = require('node-fetch') 
+const ftroli = {
+	key : {
+                          participant : '0@s.whatsapp.net'
+                        },
+       message: {
+                    orderMessage: {
+                            itemCount : 9999999999999,
+                            status: 1,
+                            surface : 1,
+                            message: 'IyannZx',
+                            orderTitle: 'MENU',
+                            thumbnail: await (await fetch('https://telegra.ph/file/3911d7aaaa8733314f70f.png')).buffer(),
+                            sellerJid: '0@s.whatsapp.net'
+          
+                          }
+                        }
+                      }
+conn.sendButton(m.chat, text.trim(), '*By Julian Kastara*\n*Support By Nekopoi*', null, [['Donasi', '.donasi'],['Owner', '.owner']], m) {  
+      quoted: ftroli,  
+      contextInfo: { //forwardingScore: 99999, isForwarded: true,  
+          externalAdReply: {  showAdAttribution: true, 
+              title: 'ZeroTwo MD',  
+              body: 'IyannZx', 
+              description: 'IyannZx', 
+              mediaType: 2,  
+            thumbnail: await (await fetch('https://telegra.ph/file/00faf159ce0349901eaf3.jpg')).buffer(), 
+           mediaUrl: `https://github.com/DarkBoyz` 
+          }  
+       }  
+      })
 
-await conn.send3ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/2aff998a8d9a3a11fdd44.jpg')).buffer(),  '*────────[ BOBA MENU ]────────*', text, 'OWNER', '.owner', 'INFOBOT', '.info', 'DONASI', '.donasi', m,)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu server sedang error', m)
     throw e
